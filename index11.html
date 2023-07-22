@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navigation menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Portfolio</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li> <!-- Corrected projects link -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm RIZWANA BEGUM</div>
+        <div class="text-three">Web Developer</div>
+        <div class="text-four">From India</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="img.jpg" alt="Profile Image" /> <!-- Provide appropriate alt text for accessibility -->
+        </div>
+        <div class="right">
+          <div class="topic">Designing Is My Passion</div>
+          <p>
+            Andhra University student. I am currently in my third year of a B.Tech programme. My CGPA in 10th grade was 9.30, 76% in intermediate, and 8.00 at Andhra University. C, C++, and Java are my primary programming languages. Java, data structures, and algorithms are my areas of expertise. I'm also familiar with web development and databases. I have a lot of creative ideas. Ethics and morals are more important to me. I enjoy working towards my goal of becoming a web developer.
+          </p>
+          <div class="button">
+            <button onclick="window.location.href='resume.pdf'">Download CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Skill Section Start -->
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title"><span>My Skills</span></div>
+      <div class="skills-details">
+        <div class="text">
+          <div class="topic">Skills Reflect Our Knowledge</div>
+          <p>As previously stated, I am familiar with C, C++, and Java. I'd also like to learn more about web development.</p>
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">HTML</div>
+            <div class="per">90%</div>
+          </div>
+          <div class="box">
+            <div class="topic">CSS</div>
+            <div class="per">80%</div>
+          </div>
+          <div class="box">
+            <div class="topic">JavaScript</div>
+            <div class="per">50%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects"> <!-- Corrected section ID -->
+    <div class="content">
+      <div class="title"><span>Projects</span></div>
+      <div class="project-images">
+        <div class="project-image">
+          <img src="frnd.png" alt="Website Describing Friends" />
+          <div class="project-title">Website Describing Friends</div>
+        </div>
+        <div class="project-image">
+          <img src="website.png" alt="E-commerce Shopping Website" />
+          <div class="project-title">E-commerce Shopping Website</div>
+        </div>
+        <div class="project-image">
+          <img src="to-do.png" alt="To-Do List Website" />
+          <div class="project-title">To-Do List Website</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="container" id="contact"> <!-- Added ID for contact section -->
+    <h1>Contact Me</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer Section Start -->
+  <footer>
+    <div class="text">
+      <span>Created By <a href="#">Mounika</a> | &#169; 2023 All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script> <!-- Include your JavaScript file here -->
+</body>
+</html>
